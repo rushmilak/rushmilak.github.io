@@ -2,8 +2,8 @@
 :root {
   --text: #000;
   --bg: #fff;
-  --accent: #1a0aa8;      /* the blue used for highlighted titles */
-  --placeholder: #6197d4; /* photo placeholder colour */
+  --accent: #722BAD;      /* the blue used for highlighted titles */
+  --placeholder: #69a3e4; /* photo placeholder colour */
   --max-width: 1000px;
 }
 
@@ -73,7 +73,7 @@ nav a[aria-current="page"] {
 }
 
 .about .description {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -99,7 +99,10 @@ nav a[aria-current="page"] {
 
 .hl { color: var(--accent); }
 
-a { color: var(--accent); }
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
 
 /* ---------- Sub pages ---------- */
 main.page { margin-top: 48px; font-size: 1.15rem; }
