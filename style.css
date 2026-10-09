@@ -3,7 +3,7 @@
   --text: #000;
   --bg: #fff;
   --accent: #1a0aa8;      /* the blue used for highlighted titles */
-  --placeholder: #c9d1da; /* photo placeholder colour */
+  --placeholder: #6197d4; /* photo placeholder colour */
   --max-width: 1000px;
 }
 
@@ -77,7 +77,7 @@ nav a[aria-current="page"] {
   font-weight: 600;
 }
 
-.about .description p { margin: 0 0 12px; }
+.about .description p { margin: 0 0 10px; }
 
 /* ---------- Updates ---------- */
 .updates { margin-top: 64px; }
