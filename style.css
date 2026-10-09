@@ -91,8 +91,8 @@ nav a[aria-current="page"] {
 .updates ul {
   margin: 0;
   padding-left: 28px;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 400;
 }
 
 .updates li { margin-bottom: 6px; }
@@ -112,5 +112,5 @@ main.page h1 { font-size: 1.8rem; margin: 0 0 16px; }
   nav { gap: 18px; }
   .about { flex-direction: column; gap: 24px; }
   .about .description { font-size: 1.1rem; }
-  .updates ul { font-size: 1.1rem; }
+  .updates ul { font-size: 1rem; }
 }
