@@ -4,6 +4,7 @@
   --bg: #fff;
   --accent: #722BAD;      /* the blue used for highlighted titles */
   --placeholder: #69a3e4; /* photo placeholder colour */
+  --badge: #722BAD;       /* colour of the venue tag in Papers */
   --max-width: 1000px;
 }
 
@@ -85,23 +86,64 @@ nav a[aria-current="page"] {
 
 .about .description p { margin: 0 0 10px; }
 
-/* ---------- Updates ---------- */
-.updates { margin-top: 64px; }
+/* ---------- Papers ---------- */
+.papers { margin-top: 64px; }
 
-.updates h2 {
-  margin: 0 0 8px;
+.papers h2 {
+  margin: 0 0 20px;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.updates ul {
-  margin: 0;
-  padding-left: 28px;
-  font-size: 1.1rem;
+.paper {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0 40px;
+  align-items: start;
+  margin-bottom: 32px;
+  font-size: 1.05rem;
   font-weight: 400;
 }
 
-.updates li { margin-bottom: 6px; }
+.badge {
+  display: block;
+  padding: 4px 12px;
+  background: var(--badge);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.paper-title {
+  display: block;
+  color: var(--text);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.paper-title:hover { color: var(--accent); }
+
+.paper-body .authors,
+.paper-body .venue { line-height: 1.7; }
+
+.btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 3px 22px;
+  border: 1px solid var(--text);
+  border-radius: 3px;
+  color: var(--text);
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--text);
+  color: var(--bg);
+}
 
 .hl { color: var(--accent); }
 
@@ -121,5 +163,6 @@ main.page h1 { font-size: 1.8rem; margin: 0 0 16px; }
   nav { gap: 18px; }
   .about { flex-direction: column; gap: 24px; }
   .about .description { font-size: 1.1rem; }
-  .updates ul { font-size: 1rem; }
+  .paper { grid-template-columns: 1fr; gap: 10px 0; font-size: 1rem; }
+  .badge { justify-self: start; }
 }
